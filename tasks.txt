@@ -40,7 +40,7 @@ Task 3 Hurt Me Plenty
 
 This task is performed after the previous one (Bring It On).
 
-1. Create a storm branch and add a commit to the storm.txt file:
+1. Create a storm branch and add a commit to the storm.txt file: (touch storm.txt)
 
 Twenty ships with Norsemen braves
 Riding the northern wind
@@ -50,7 +50,12 @@ Riding the northern wind
 They left their shores at early dawn
 As a red sun was rising in the east
 
+# git add and push
+
 3. Return to master and create the pursuit.txt file with the text below:
+#git checkout master/main
+# touch pursuit.txt
+
 
 The warming sun returns again
 And melts away the snow
@@ -59,6 +64,24 @@ Winter is letting go
 
 Make a commit.
 
+# git add and push
 4. Mark the commit with session1 tag and go to the storm branch.
-
+#git tag -a session1 -m "session1"
+#git checkout storm
 5. Rebase the storm branch so that it contains the last commit from the master.
+#git rebase master/main
+
+TAsk 4 Hardcore
+This task is carried out immediately after the previous one (Hurt Me Plenty).
+
+1. Make a push of your repository and make sure all commits are on github.
+#git push
+
+
+2. Make a new repository on github.
+
+3. Change the remote repository into the local one so that fetch and push come to to the new repository that was created in the previous step.
+
+4. Make a push and make sure that the second repository on the github looks the same as the first.
+
+5. Return the remote settings to their initial state: pull and push of the first local repository lead to one remote repository on the github.
