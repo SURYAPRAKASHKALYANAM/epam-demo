@@ -1,0 +1,6 @@
+*.db
+*.log
+tasks.txt
+# directories with names target or bin
+/target/
+/bin/
