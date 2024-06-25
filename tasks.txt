@@ -78,10 +78,13 @@ This task is carried out immediately after the previous one (Hurt Me Plenty).
 #git push
 
 
-2. Make a new repository on github.
+2. Make a new repository (epam_backup )on github.
+#git remote add new-origin https://github.com/SURYAPRAKASHKALYANAM/epam-backup.git
 
 3. Change the remote repository into the local one so that fetch and push come to to the new repository that was created in the previous step.
-
+# git fetch new-origin
 4. Make a push and make sure that the second repository on the github looks the same as the first.
-
+# git push new-origin main
 5. Return the remote settings to their initial state: pull and push of the first local repository lead to one remote repository on the github.
+# git remote remove new-origin
+
